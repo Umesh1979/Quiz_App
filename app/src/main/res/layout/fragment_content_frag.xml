@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Content_frag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#03A9F4"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/my_header"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:scrollHorizontally="false"/>
+
+        <TextView
+            android:id="@+id/highscore_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:text="Highest Score : 0"
+            android:textStyle="italic"
+            android:textSize="23dp"
+            android:textColor="#FFF"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_recycler_view">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
